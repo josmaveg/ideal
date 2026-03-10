@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Idealista</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h3>Arroyo de la Encomienda (Valladolid)</h3>
+    <button onclick="abrir('https://www.idealista.com/venta-viviendas/arroyo-de-la-encomienda-valladolid/con-chalets,duplex,aticos,de-tres-dormitorios,sin-inquilinos/')">
+      Abrir búsqueda
+    </button>
+  </div>
+
+  <div class="card">
+    <h3>Covaresa / Parque / Alameda (Valladolid)</h3>
+    <button onclick="abrir('https://www.idealista.com/venta-viviendas/valladolid/covaresa-parque-alameda/con-chalets,aticos,de-tres-dormitorios,sin-inquilinos/')">
+      Abrir búsqueda
+    </button>
+  </div>
+
+  <div class="card">
+    <h3>Suances (Cantabria)</h3>
+    <button onclick="abrir('https://www.idealista.com/venta-viviendas/suances-cantabria/con-chalets,duplex,aticos,de-dos-dormitorios,de-tres-dormitorios,sin-inquilinos/')">
+      Abrir búsqueda
+    </button>
+  </div>
+
+  <div class="card">
+    <h3>Santander (Cantabria)</h3>
+    <button onclick="abrir('https://www.idealista.com/venta-viviendas/santander-cantabria/con-chalets,duplex,aticos,de-dos-dormitorios,sin-inquilinos/')">
+      Abrir búsqueda
+    </button>
+  </div>
+
+<script>
+function abrir(url) {
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
